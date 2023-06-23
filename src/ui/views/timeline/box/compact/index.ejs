@@ -1,0 +1,23 @@
+
+<div class="timeline">
+    <div class="timeline-bar"></div>
+    <div class="timeline-inner clearfix">
+        <% degrees.forEach(function(degree,index){ %>
+        <% 
+            const side = (index % 2) ? 'right' : 'left';
+            const animationDirection = side == 'left' ? 'right' : 'left';
+        %>
+            <div class="timeline-box timeline-box-compact timeline-box-<%= side %>">
+                <span class="dot"></span>
+
+                <div class="timeline-box-inner animate-<%= animationDirection %>">
+                    <span class="arrow"></span>
+
+                    <div class="date"><span><%= degree.startDate %> - <%= degree.endDate %></span></div>
+                    <h3><%= degree.title %></h3>
+                    <h4><%= degree.school %></h4>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+</div>

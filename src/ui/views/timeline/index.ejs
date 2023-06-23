@@ -1,0 +1,14 @@
+<div class="timeline">
+    <div class="timeline-bar"></div>
+    <div class="timeline-inner clearfix">
+        <% 
+            items.forEach(function(item, index){ 
+                const side = (index % 2) ? 'right' : 'left';
+                const animationDirection = side == 'left' ? 'right' : 'left';
+        %>
+            <%- include box/index.ejs %>
+        <%
+            }) 
+        %>
+    </div>
+</div>

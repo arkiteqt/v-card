@@ -1,0 +1,91 @@
+/**
+ * 16.0 - Old Browsers
+ */
+ .no-csstransforms #preloader .preload-icon,
+ .no-cssanimations #preloader .preload-icon {
+     display: none;
+ }
+ 
+ .no-csstransforms #preloader .preload-text,
+ .no-cssanimations #preloader .preload-text {
+     top: 50%;
+     left: 0;
+     width: 100%;
+     height: 20px;
+     position: absolute;
+     text-align: center;
+     display: block;
+     font-size: 14px;
+     line-height: 20px;
+     font-weight: 600;
+ }
+ 
+ .no-csstransforms .sidebar-fixed {
+     right: -450px;
+ }
+ 
+ .no-csstransforms .sidebar-opened .sidebar-fixed {
+     right: 0;
+ }
+ 
+ .no-csstransforms .mobile-nav {
+     right: -300px;
+ }
+ 
+ .no-csstransforms .mobile-nav-opened .mobile-nav {
+     right: 0;
+ }
+ 
+ .no-rgba .head-bg:before,
+ .no-rgba .portfolio-figure .portfolio-caption {
+     background-image: url("img/overlay.png");
+ }
+ 
+ .no-opacity .overlay {
+     background: url("img/overlay.png");
+ }
+ 
+ .no-opacity .bar-line:after {
+     background-color: #dedede !important;
+     opacity: 1;
+ }
+ 
+ .no-opacity.theme-skin-dark .bar-line:after {
+     background-color: #525458 !important;
+     opacity: 1;
+ }
+ 
+ .no-opacity .portfolio-figure .portfolio-caption {
+     display: none;
+ }
+ 
+ .no-opacity .portfolio-figure:hover .portfolio-caption {
+     display: block;
+ }
+ 
+ .no-boxshadow .nav-wrap .nav > ul > li ul,
+ .no-boxshadow .grid-box,
+ .no-boxshadow .post-box,
+ .no-boxshadow .section-box,
+ .no-boxshadow .calendar-busy,
+ .no-boxshadow .sidebar-default .profile-photo img {
+     border: 1px solid #dedede;
+ }
+ 
+ .no-boxshadow .timeline-box-inner {
+     border: 1px solid #dedede !important;
+ }
+ 
+ .no-boxshadow.theme-skin-dark .nav-wrap .nav > ul > li ul,
+ .no-boxshadow.theme-skin-dark .grid-box,
+ .no-boxshadow.theme-skin-dark .post-box,
+ .no-boxshadow.theme-skin-dark .section-box,
+ .no-boxshadow.theme-skin-dark .calendar-busy,
+ .no-boxshadow.theme-skin-dark .sidebar-default .profile-photo img {
+     border: 1px solid #525458;
+ }
+ 
+ .no-boxshadow.theme-skin-dark .timeline-box-inner {
+     border: 1px solid #525458 !important;
+ }
+ 

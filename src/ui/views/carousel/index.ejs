@@ -1,0 +1,13 @@
+<div class="clients-carousel">
+    <% items.forEach(function(item){ %>
+        <div class="client-logo">
+            <% if(item.link){ %>
+                <a href="<%= item.link.url %>" target="_blank"> 
+            <% } %>
+                <img src="<%= item.image.url %>" title="<%= item.image.title %>" alt="<%= item.image.alt %>" />
+            <% if(item.link){ %>
+                </a>
+            <% } %>
+        </div>
+    <% }) %>
+</div>

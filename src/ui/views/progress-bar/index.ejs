@@ -1,0 +1,32 @@
+<% 
+// 1 : [0,1], 2: [2,3], 3 : [4,5], this is a working solution for now, but will break if the data changes
+for(let row = 0; row < skills.length; row+=2 ){
+%>
+<div class="row">
+    <div class="col-sm-6">
+        <div class="progress-bar">
+            <div class="bar-data">
+                <span class="bar-title"><%= skills[row].title %></span>
+                <span class="bar-value"><%= skills[row].percentage %></span>
+            </div>
+            <div class="bar-line">
+                <span class="bar-fill" data-width="<%= skills[row].percentage %>"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="progress-bar">
+            <div class="bar-data">
+                <span class="bar-title"><%= skills[row+1].title %></span>
+                <span class="bar-value"><%= skills[row+1].percentage %></span>
+            </div>
+            <div class="bar-line">
+                <span class="bar-fill" data-width="<%= skills[row+1].percentage %>"></span>
+            </div>
+        </div>
+    </div>
+</div>     
+<%
+}
+%>

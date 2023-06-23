@@ -1,0 +1,73 @@
+@mixin theme-color($className:'07cb79', $hexColor : '#07cb79'){
+    .theme-color-#{$className} a,
+    .theme-color-#{$className} blockquote:before,
+    .theme-color-#{$className} .contact-map .contact-info a:hover,
+    .theme-color-#{$className} .interests-list i,
+    .theme-color-#{$className} .input-field.used label,
+    .theme-color-#{$className} .logo span,
+    .theme-color-#{$className} #map .map-icon,
+    .theme-color-#{$className} .nav-wrap .btn-mobile-nav,
+    .theme-color-#{$className} .page-404 h2 span,
+    .theme-color-#{$className} .post-box .post-title a:hover,
+    .theme-color-#{$className} .post-single .post-title a:hover,
+    .theme-color-#{$className} .post-comments .section-title,
+    .theme-color-#{$className} .ref-box .person-speech:before,
+    .theme-color-#{$className} .timeline-box .date,
+    .theme-color-#{$className} .widget-title,
+    .theme-color-#{$className} .widget_meta ul li a:hover,
+    .theme-color-#{$className} .widget_archive ul li a:hover,
+    .theme-color-#{$className} .widget_nav_menu ul li a:hover,
+    .theme-color-#{$className} .widget_categories ul li a:hover,
+    .theme-color-#{$className} .widget_recent_entries ul li a:hover,
+    .theme-color-#{$className} .widget_recent_comments ul li a:hover,
+    .theme-color-#{$className} .widget_search .search-form:before,
+    .theme-color-#{$className} .widget-popuplar-posts .post-title a:hover,
+    .theme-color-#{$className} .widget-recent-posts .post-title a:hover {
+    color: #{$hexColor}; }
+    .theme-color-#{$className} ins,
+    .theme-color-#{$className} mark,
+    .theme-color-#{$className} .btn-primary,
+    .theme-color-#{$className} .btn-primary-outer,
+    .theme-color-#{$className} .btn-sidebar-close,
+    .theme-color-#{$className} .calendar-busy .calendar-body td .current-day,
+    .theme-color-#{$className} .calendar-busy .calendar-today .date,
+    .theme-color-#{$className} .filter .active:after,
+    .theme-color-#{$className} .filter-bar .filter-bar-line,
+    .theme-color-#{$className} .input-field .line:before,
+    .theme-color-#{$className} .input-field .line:after,
+    .theme-color-#{$className} .mobile-nav,
+    .theme-color-#{$className} .nav > ul > li > a > span,
+    .theme-color-#{$className} .post-datetime,
+    .theme-color-#{$className} .profile-social,
+    .theme-color-#{$className} .profile-preword span,
+    .theme-color-#{$className} .progress-bar .bar-fill,
+    .theme-color-#{$className} .progress-bar .bar-line:after,
+    .theme-color-#{$className} .price-box.box-primary .btn,
+    .theme-color-#{$className} .price-box.box-primary .price-box-top,
+    .theme-color-#{$className} .profile-list .button,
+    .theme-color-#{$className} .pagination .page-numbers.current,
+    .theme-color-#{$className} .pagination .page-numbers.current:hover,
+    .theme-color-#{$className} .pagination .page-numbers:active,
+    .theme-color-#{$className} .pagination .page-numbers.next:active,
+    .theme-color-#{$className} .pagination .page-numbers.prev:active,
+    .theme-color-#{$className} .timeline-bar,
+    .theme-color-#{$className} .timeline-box .dot,
+    .theme-color-#{$className} .timeline-box-compact .date span,
+    .theme-color-#{$className} .widget_tag_cloud a:hover {
+    background-color:  #{$hexColor}; }
+    .theme-color-#{$className} .mejs-container .mejs-controls .mejs-time-rail .mejs-time-current,
+    .theme-color-#{$className} .mejs-container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+    background:  #{$hexColor}; }
+    .theme-color-#{$className} .timeline-box-inner,
+    .theme-color-#{$className} .price-box.box-primary .btn,
+    .theme-color-#{$className} .widget_search .search-form,
+    .theme-color-#{$className} .widget_tag_cloud a:hover {
+    border-color:  #{$hexColor}; }
+    .theme-color-#{$className} .page-404 h2 span:before,
+    .theme-color-#{$className} .profile-preword span:before,
+    .theme-color-#{$className} .timeline-box-compact .date span:before {
+    border-left-color:  #{$hexColor}; }
+    .theme-color-#{$className} .price-box.box-primary .price-box-top:before {
+    border-top-color:  #{$hexColor}; }
+
+}

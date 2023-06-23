@@ -1,0 +1,38 @@
+<div class="row price-list">
+    <% prices.forEach(function(price){ %> 
+    <div class="col-sm-4">
+        <div class="price-box box-<% if(price.isPrimary){
+            %>primary<% } %>">
+            <div class="price-box-top">
+                <span>$<%= price.cost %></span>
+                <small><%= price.frequency %></small>
+            </div>
+            <div class="price-box-content">
+                <h3><%= price.label %></h3>
+                <ul>
+                    <% price.features.forEach(function(feature){ %>
+                        <li>
+                            <% if(!feature.isIncluded) { %> 
+                                <del>
+                            <% } %>
+                            
+                            <%= feature.name %> 
+                            
+                            <% if(feature.isNew){ %>  
+                                <span class="new">new</span>
+                            <% } %>  
+                            
+                            <% if(!feature.isIncluded) { %> 
+                                </del>
+                            <% } %>
+                        </li>
+                    <% }); %>
+                </ul>
+                <div class="btn-wrap">
+                    <a class="btn btn-lg btn-border" href="#">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <% }); %>
+</div>
