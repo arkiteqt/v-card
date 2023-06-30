@@ -1,8 +1,5 @@
-<% 
-// 1 : [0,1], 2: [2,3], 3 : [4,5], this is a working solution for now, but will break if the data changes
-for(let row = 0; row < skills.length; row+=2 ){
-%>
-<div class="row">
+const ProgressBar = () => {
+    return `<div class="row">
     <div class="col-sm-6">
         <div class="progress-bar">
             <div class="bar-data">
@@ -26,7 +23,6 @@ for(let row = 0; row < skills.length; row+=2 ){
             </div>
         </div>
     </div>
-</div>     
-<%
-}
-%>
+</div>`}
+
+export default ProgressBar;

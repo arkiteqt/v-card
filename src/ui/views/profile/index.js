@@ -1,4 +1,5 @@
-<div class="profile">
+const Profile = () => {
+    return `<div class="profile">
     <div class="row">
         <div class="col-xs-5">
             <div class="profile-photo"><img src="img/uploads/rs-photo-v1.jpg" alt="Robert Smith"/></div>
@@ -54,4 +55,6 @@
         <li><a class="ripple-centered" href="https://www.instagram.com" target="_blank"><i
                 class="rsicon rsicon-instagram"></i></a></li>
     </ul>
-</div>
+</div>`}
+
+export default Profile;

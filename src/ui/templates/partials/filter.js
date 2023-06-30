@@ -1,4 +1,4 @@
-<div class="filter">
+const Filter = () => {`<div class="filter">
     <div class="filter-inner">
         <div class="filter-btn-group">
             <button data-filter="*">All</button>
@@ -9,4 +9,6 @@
             <span class="filter-bar-line"></span>
         </div>
     </div>
-</div>
+</div>`}
+
+export default Filter;

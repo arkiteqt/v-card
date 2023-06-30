@@ -1,4 +1,3 @@
-
 const Section = (id,title) => {
 return `<section id="${id}" class="section section-${title}">
     <div class="animate-up animated">
