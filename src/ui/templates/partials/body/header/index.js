@@ -1,5 +1,7 @@
 const nav = require('./nav');
 
+// import backgroundimg from "../../../../../assets/img/uploads/rs-cover.jpg";
+
 const header = () => { 
     return `<header class="header">
     <div class="head-bg" style="background-image: url('img/uploads/rs-cover.jpg')"></div>
