@@ -1,10 +1,10 @@
-const nav = require('./nav');
+// const nav = require('./nav');
 
-// import backgroundimg from "../../../../../assets/img/uploads/rs-cover.jpg";
+import backgroundimg from "../../../../../assets/img/uploads/rs-cover.jpg";
 
-const header = () => { 
+const Header = () => { 
     return `<header class="header">
-    <div class="head-bg" style="background-image: url('img/uploads/rs-cover.jpg')"></div>
+    <div class="head-bg" style="background-image: url('${backgroundimg}')"></div>
 
     <div class="head-bar">
         <div class="head-bar-inner">
@@ -27,5 +27,5 @@ const header = () => {
 </header>
 <!-- .header -->`}
 
-module.exports = header;
+export default Header;
 

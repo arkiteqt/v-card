@@ -1,6 +1,5 @@
-const sidebar = () => {
-    return `<div class="sidebar sidebar-fixed">
-    <button class="btn-sidebar btn-sidebar-close"><i class="rsicon rsicon-close"></i></button>
+const Sidebar = () => {
+    return `<button class="btn-sidebar btn-sidebar-close"><i class="rsicon rsicon-close"></i></button>
 
     <div class="widget-area">
         <aside class="widget widget-profile">
@@ -156,8 +155,7 @@ const sidebar = () => {
         <!-- .widget_categories -->
     </div>
     <!-- .widget-area -->
-</div>
 <!-- .sidebar -->`
 }
 
-module.exports = sidebar;
+module.exports = Sidebar;
