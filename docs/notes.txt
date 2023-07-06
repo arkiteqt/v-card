@@ -1,0 +1,41 @@
+Typography Page
+	- Columns (2 / 3 / 4)
+	- Headings (h1 to h6)
+	- Paragraphs (with links, italic text, strong text)
+	- Blockquotes
+	- Tables
+	- Definition Lists
+	- Unordered Lists (nested)
+	- Ordered Lists
+	- HTML Tags
+	- Image Alignments
+	- Text Alignments
+
+Third Party Dependencies (in the order they are listed in Head and Footer)
+	CSS
+		- Google Fonts (Fredoka One, Open Sans)
+		- Icons
+		
+		JQuery Plugins
+			- BXSlider
+			- Custom Scroll / mCustomScrollbar
+			- Media Element / Media Element Player
+			- Fancybox
+			- Owl Carousel
+		
+		
+	JS
+		Modernizr
+		JQuery
+			- Google Maps API
+			- Map Icons
+			- MouseWheel-3.0.6
+			- Images Loaded
+			- Isotope
+			- Appear
+			- One Page Nav
+			- BXSlider
+			- Custom Scroll
+			- Media Element
+			- Fancy Box
+		

@@ -1,4 +1,6 @@
 import Header from '../header';
+import Footer from '../footer';
+
 const Wrapper = () => {
 	return `${Header()}
 	<div class="content">
@@ -6,7 +8,7 @@ const Wrapper = () => {
 			
 		</div>
 	</div>
-	<footer id="footer" class="footer"></footer>`
+	${Footer()}`
 }
 
 export default Wrapper;
