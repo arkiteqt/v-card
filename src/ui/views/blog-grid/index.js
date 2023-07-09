@@ -2,7 +2,7 @@ import posts from '../../../api/db/posts';
 
 import PostBox from './post-box';
 
-const Blog = () => {
+const BlogGrid = () => {
     const PostsHTML = posts.map((post) => {
         return PostBox(post)
     });
@@ -12,5 +12,5 @@ const Blog = () => {
     </div>`);
 }
 
-export default Blog;
+export default BlogGrid;
 

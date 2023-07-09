@@ -7,7 +7,7 @@ import Wrapper from './templates/partials/body/wrapper';
 import Section from './templates/partials/section';
 
 // Modules
-import Blog from './views/blog'
+import BlogGrid from './views/blog-grid'
 
 
 function hideSitePreloader() {
@@ -30,8 +30,8 @@ function hideSitePreloader() {
     $('.sidebar').append(SidebarEl);
     const WrapperEl = Wrapper();
     $('.wrapper').append(WrapperEl);
-    const BlogEl = Blog();
-    $('.blog').append(BlogEl);
+    const BlogGridEl = BlogGrid();
+    $('.blog').append(BlogGridEl);
     hideSitePreloader();
   })();
   
