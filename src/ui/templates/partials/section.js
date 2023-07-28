@@ -1,7 +1,8 @@
 const Section = (id,title, content) => {
+    const SectionTitle = title ? `<h2 class="section-title">${title}</h2>` : '';
 return `<section id="${id}" class="section section-${id}">
     <div class="animate-up animated">
-        <h2 class="section-title">${title}</h2>
+        ${SectionTitle}
 
         <div class="section-box">
             ${content}
