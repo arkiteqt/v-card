@@ -1,10 +1,10 @@
-const Section = (id,title) => {
-return `<section id="${id}" class="section section-${title}">
+const Section = (id,title, content) => {
+return `<section id="${id}" class="section section-${id}">
     <div class="animate-up animated">
         <h2 class="section-title">${title}</h2>
 
         <div class="section-box">
-            <% section.content %>
+            ${content}
         </div>
     </div>
 </section>
