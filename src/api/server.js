@@ -4,9 +4,15 @@ const app = express();
 // set port for hosting server
 app.set('port', (process.env.PORT || 5000));
 // TODO: create endpoint to serve static assets
-app.use(express.static(__dirname + '/src/ui/assets'));
+// app.use(express.static(__dirname + '/src/ui/assets'));
 
 // endpoints
+
+// get user by id
+app.get('/users/:id', (req,res) => {
+
+})
+
 
 
 

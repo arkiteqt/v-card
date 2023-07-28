@@ -1,3 +1,44 @@
+const data = {
+    name : 'Robert Smith',
+    position : 'Developer and businessman',
+    photo : 'img/uploads/rs-photo-v1.jpg',
+    details : [{
+        age : '29',
+        address : '24058, Belgium, Brussels, Liutte 27, BE',
+        email : 'robertsmith@company.com',
+        phone : '12562548456',
+        freelance : 'till April 15, 2016',
+        availability : {
+            display : 'button',
+            label : 'On Vacation',
+            value : 'till March 25, 2016'
+        }
+    }],
+    socialMedia : [{
+        platform : 'facebook',
+        url : 'https://www.facebook.com'
+    },{
+        platform : 'twitter',
+        url : 'https://twitter.com'
+    },{
+        platform : 'linkedin',
+        url : 'https://www.linkedin.com'
+    },{
+        platform : 'google-plus',
+        url :'https://plus.google.com'
+    },{
+        platform : 'dribble',
+        url : 'https://dribbble.com'
+    },{
+        platform : 'instagram',
+        url : 'https://www.instagram.com'
+    }]
+}
+
+import ProfileInfo from "./info";
+import ProfileList from "./list";
+import ProfileSocial from "./social";
+
 const Profile = () => {
     return `<div class="profile">
     <div class="row">
@@ -5,56 +46,12 @@ const Profile = () => {
             <div class="profile-photo"><img src="img/uploads/rs-photo-v1.jpg" alt="Robert Smith"/></div>
         </div>
         <div class="col-xs-7">
-            <div class="profile-info">
-                <div class="profile-preword"><span>Hello</span></div>
-                <h1 class="profile-title"><span>I'm</span> Robert Smith</h1>
-
-                <h2 class="profile-position">Developer and businessman</h2>
-            </div>
-            <ul class="profile-list">
-                <li class="clearfix">
-                    <strong class="title">Age</strong>
-                    <span class="cont">29</span>
-                </li>
-                <li class="clearfix">
-                    <strong class="title">Address</strong>
-                    <span class="cont">24058, Belgium, Brussels, Liutte 27, BE</span>
-                </li>
-                <li class="clearfix">
-                    <strong class="title">E-mail</strong>
-                    <span class="cont"><a href="mailto:robertsmith@company.com">robertsmith@company.com</a></span>
-                </li>
-                <li class="clearfix">
-                    <strong class="title">Phone</strong>
-                    <span class="cont"><a href="tel:+12562548456">+1 256 254 84 56</a></span>
-                </li>
-                <li class="clearfix">
-                    <strong class="title">Freelance</strong>
-                    <span class="cont">till April 15, 2016</span>
-                </li>
-                <li class="clearfix">
-                    <strong class="title"><span class="button">On Vacation</span></strong>
-                    <span class="cont"><i class="rsicon rsicon-calendar"></i>till March 25, 2016</span>
-                </li>
-            </ul>
+            ${ProfileInfo()}
+            ${ProfileList()}
         </div>
     </div>
 </div>
-<div class="profile-social">
-    <ul class="social">
-        <li><a class="ripple-centered" href="https://www.facebook.com" target="_blank"><i
-                class="rsicon rsicon-facebook"></i></a></li>
-        <li><a class="ripple-centered" href="https://twitter.com" target="_blank"><i
-                class="rsicon rsicon-twitter"></i></a></li>
-        <li><a class="ripple-centered" href="https://www.linkedin.com" target="_blank"><i
-                class="rsicon rsicon-linkedin"></i></a></li>
-        <li><a class="ripple-centered" href="https://plus.google.com" target="_blank"><i
-                class="rsicon rsicon-google-plus"></i></a></li>
-        <li><a class="ripple-centered" href="https://dribbble.com" target="_blank"><i
-                class="rsicon rsicon-dribbble"></i></a></li>
-        <li><a class="ripple-centered" href="https://www.instagram.com" target="_blank"><i
-                class="rsicon rsicon-instagram"></i></a></li>
-    </ul>
-</div>`}
+${ProfileSocial()}
+`}
 
 export default Profile;
