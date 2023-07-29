@@ -2,14 +2,12 @@ import $ from 'jquery';
 import "./styles/fonts/icomoon/style.scss";
 import "./styles/main.scss";
 
-// Page Components
+// Page Components & Modules
 import Sidebar from './templates/partials/body/sidebar';
 import Wrapper from './templates/partials/body/wrapper';
 import Section from './templates/partials/section';
 import Profile from './views/profile';
-
-// Modules
-import BlogGrid from './views/blog-grid'
+import Blog from './views/blog'
 
 
 function hideSitePreloader() {
@@ -30,12 +28,12 @@ function hideSitePreloader() {
     $('.sidebar').append(SidebarEl);
     const WrapperEl = Wrapper();
     $('.wrapper').append(WrapperEl);
-    const BlogGridEl = BlogGrid();
-    $('.blog').append(BlogGridEl);
-    const TestSection = Section('test', 'test', '<p>Test</p>')
-    $('.wrapper').append(TestSection);
     const ProfileSection = Profile();
-    $('.container').append(Section('about', '', ProfileSection));
+    $('.container').append(Section('about', '',true,ProfileSection));
+    const BlogSection = Blog();
+    $('.container').append(Section('blog','From the blog',false,BlogSection));
+    const TestSection = Section('test', 'test',true, '<p>Test</p>')
+    $('.container').append(TestSection);
     hideSitePreloader();
   })();
   
