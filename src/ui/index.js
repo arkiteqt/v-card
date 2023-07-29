@@ -36,6 +36,7 @@ function hideSitePreloader() {
     $('.container').append(TestSection);
     const PortfolioSection = Grid();
     $('.container').append(Section('portfolio','Portfolio',false, PortfolioSection));
+
     hideSitePreloader();
   })();
   
