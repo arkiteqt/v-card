@@ -8,7 +8,7 @@ import Wrapper from './templates/partials/body/wrapper';
 import Section from './templates/partials/section';
 import Profile from './views/profile';
 import Blog from './views/blog'
-
+import Grid from './views/grid';
 
 function hideSitePreloader() {
     $('#preloader').remove();
@@ -34,6 +34,8 @@ function hideSitePreloader() {
     $('.container').append(Section('blog','From the blog',false,BlogSection));
     const TestSection = Section('test', 'test',true, '<p>Test</p>')
     $('.container').append(TestSection);
+    const PortfolioSection = Grid();
+    $('.container').append(Section('portfolio','Portfolio',false, PortfolioSection));
     hideSitePreloader();
   })();
   

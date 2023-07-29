@@ -38,12 +38,13 @@ const data = {
 import ProfileInfo from "./info";
 import ProfileList from "./list";
 import ProfileSocial from "./social";
+import ProfilePhoto from "../../../assets/img/uploads/rs-photo-v1.jpg";
 
 const Profile = () => {
     return `<div class="profile">
     <div class="row">
         <div class="col-xs-5">
-            <div class="profile-photo"><img src="img/uploads/rs-photo-v1.jpg" alt="Robert Smith"/></div>
+            <div class="profile-photo"><img src="${ProfilePhoto}" alt="Robert Smith"/></div>
         </div>
         <div class="col-xs-7">
             ${ProfileInfo()}
