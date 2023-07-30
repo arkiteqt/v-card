@@ -32,10 +32,8 @@ function hideSitePreloader() {
     $('.container').append(Section('about', '',true,ProfileSection));
     const BlogSection = Blog();
     $('.container').append(Section('blog','From the blog',false,BlogSection));
-    const TestSection = Section('test', 'test',true, '<p>Test</p>')
-    $('.container').append(TestSection);
-    const PortfolioSection = Grid();
-    $('.container').append(Section('portfolio','Portfolio',false, PortfolioSection));
+    // const PortfolioSection = Grid();
+    // $('.container').append(Section('portfolio','Portfolio',false, PortfolioSection));
 
     hideSitePreloader();
   })();
