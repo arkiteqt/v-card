@@ -507,6 +507,8 @@
             });
 
         }
+
+        
         
         /** Timeline:
          *  positioning timeline elements */

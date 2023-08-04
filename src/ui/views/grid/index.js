@@ -1,5 +1,6 @@
 import Projects from '../../../api/db/projects';
 import GridItem from './grid-item';
+
 const Grid = () => { 
     const GridItemsHTML = Projects.map((project, index) => {
         return GridItem(project, index)
