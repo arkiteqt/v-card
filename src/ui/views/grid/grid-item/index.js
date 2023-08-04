@@ -37,7 +37,7 @@ const GridItem = (item, index) => {
     return `<div class="grid-item size${item.size} ${categoryClasses}">
     <div class="grid-box">
         <figure class="portfolio-figure">
-            <img src="${imageURL}" alt=""/>
+            <img src="http://localhost:3001/${imageURL}" alt=""/>
             <figcaption class="portfolio-caption">
                 <div class="portfolio-caption-inner">
                     <h3 class="portfolio-title">${item.title}</h3>
