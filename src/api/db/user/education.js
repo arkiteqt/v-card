@@ -1,4 +1,4 @@
-const degrees = [{
+const education = [{
     startDate : '2012',
     endDate : '2014',
     title : 'Master of Information Technology',
@@ -20,4 +20,4 @@ const degrees = [{
     school : 'Sordonne University' 
 }]
 
-module.exports = degrees;
+module.exports = education;

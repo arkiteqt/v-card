@@ -1,4 +1,4 @@
-const jobs = [{
+const experience = [{
     startDate : '2014',
     endDate : '2016',
     companyName : 'Pineapple',
@@ -36,4 +36,4 @@ const jobs = [{
     description : "Driving from point A to point B and if necessary to point C and sometimes even to point R and point S. I was known as experienced driver. Once my passenger who was a web developer told me about his job and I have made my decision at that moment to became a developer."
 }];
 
-module.exports = jobs;
+module.exports = experience;

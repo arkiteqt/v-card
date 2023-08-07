@@ -17,9 +17,31 @@ function hideSitePreloader() {
     $('#preloader').remove();
     $('body').removeClass('loading');
 }
+function router(evt) {
+    let url = window.location.hash.slice(1) || '/';
+    switch(url){
+        case '/':
+            const ProfileSection = Profile();
+            $('.container').html(Section('about', '',true,ProfileSection));
+            break;
+        case 'category' : 
+            const BlogSection = Blog();
+            $('.container').html(Section('blog','From the blog',false,BlogSection));
+            break;
+        default: 
+            break;
+
+    }
+    // let route = resolveRoute(url);
+
+    // route();
+    console.log(url);
+};
+
 
 (function() {
-    // hideSitePreloader();
+    window.addEventListener('load', router);
+    window.addEventListener('hashchange', router);
     // Your JavaScript code using vanilla JS goes here
     // Example:
     // var heading = document.createElement('h1');
@@ -31,12 +53,11 @@ function hideSitePreloader() {
     $('.sidebar').append(SidebarEl);
     const WrapperEl = Wrapper();
     $('.wrapper').append(WrapperEl);
-    const ProfileSection = Profile();
-    $('.container').append(Section('about', '',true,ProfileSection));
-    const BlogSection = Blog();
-    $('.container').append(Section('blog','From the blog',false,BlogSection));
-    const PortfolioSection = Grid();
-    $('.container').append(Section('portfolio','Portfolio',false, PortfolioSection));
+
+    // const BlogSection = Blog();
+    // $('.container').append(Section('blog','From the blog',false,BlogSection));
+    // const PortfolioSection = Grid();
+    // $('.container').append(Section('portfolio','Portfolio',false, PortfolioSection));
 
 
             // Portfolio fancybox

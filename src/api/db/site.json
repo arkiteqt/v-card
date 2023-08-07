@@ -1,0 +1,114 @@
+{
+	"title" : "RSCard",
+	"themes" : [{
+		"colors" : [{
+			"amber" : "fec107"
+		},{
+			"blue" : "1a77d4"
+		},{
+			"coral" : "e8676b"
+		},{
+			"cyan" : "07aaf5"
+		},{
+			"green" : "07cb79"
+		},{
+			"indigo" : "5d6cc1"
+		},{
+			"lime" : "8dc24c"
+		},{
+			"orange" : "ff9801"
+		},{
+			"pale-coral" : "ffcfd3"
+		},{
+			"pale-cyan" : "83d5fb"
+		},{
+			"pale-green" : "a7d9a8"
+		},{
+			"pale-pink" : "fbbdd4"
+		},{
+			"pale-purple" : "c7ccea"
+		},{
+			"pale-red" : "d1a3a6"
+		},{
+			"pale-teal" : "b4e1dc"
+		},{
+			"pale-violet" : "e2bfe7"
+		},{
+			"pink" : "ec407a"
+		},{
+			"purple" : "673bb7"
+		},{
+			"red" : "e83b35"
+		},{
+			"royal-blue" : "3f51b5"
+		},{
+			"teal" : "27a79a"
+		},{
+			"turquoise" : "56c8d2"
+		},{
+			"violet" : "8e45ae"
+		},{
+			"yellow" : "ffde03"
+		}]
+	}],
+	"routes" : [{
+		"title" : "Home",
+		"path" : "/",
+		"data" : {}
+	},{
+		"title" : "Blog",
+		"route" : "/blog",
+		"view" : "Page"
+	},{
+		"title" : "Typography",
+		"route" : "/typography",
+		"view" : "Page"
+	}],
+	"users" : [{
+		"name" : "Robert Smith",
+		"title" : "Developer and businessman",
+		"age" : 29,
+		"address" : "24058, Belgium, Brussels, Liutte 27, BE",
+		"email" : "robertsmith@company.com",
+		"phone" : "12562548456",
+		"socialMedia" : [{
+			"icon" : "facebook",
+			"url" : "https://www.facebook.com"
+		},{
+			"icon" : "twitter",
+			"url" : "https://twitter.com"
+		},{
+			"icon" : "linkedin",
+			"url" : "https://www.linkedin.com"
+		},{
+			"icon" : "google-plus",
+			"url" : "https://plus.google.com"
+		},{
+			"icon" : "dribble",
+			"url" : "https://dribbble.com"
+		},{
+			"icon" : "instagram",
+			"url" : "https://www.instagram.com"
+		}],
+		"bio" : "Hello! I'm Robert Smith. Senior Web Developer specializing in front end development. Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including JavaScript, SQL, and C. Stng background in project management and customer relations.",
+		"skills" : [{
+			"title" : "WordPress",
+			"percentage" : "80%"
+		},{
+			"title" : "JavaScript",
+			"percentage" : "52%"
+		},{
+			"title" : "Drupal",
+			"percentage" : "61%"
+		},{
+			"title" : "HTML & CSS",
+			"percentage" : "89%"
+		},{
+			"title" : "PHP & MySQL",
+			"percentage" : "99%"
+		},{
+			"title" : "Photoshopp",
+			"percentage" : "97%"
+		}]
+	}] 
+}

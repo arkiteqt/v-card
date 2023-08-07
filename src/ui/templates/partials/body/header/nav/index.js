@@ -1,11 +1,13 @@
-const nav = (navData) => {
+import navData from '../../../../../../api/db/menu';
+
+const nav = () => {
 	const menu = navData.map((item, index) => {
 		let subMenuHTML = '';
 		if(item.menu){
 			const subMenu = item.menu.map((subItem, i) => {
-				return `<ul><li><a href="${subItem.link}">${subItem.name}</a></li></ul>`;
+				return `<li><a href="${subItem.link}">${subItem.name}</a></li>`;
 			});
-			subMenuHTML = subMenu.join('')
+			subMenuHTML = `<ul>${subMenu.join('')}</ul>`
 		}
 		return `<li><a href="${item.link}">${item.name}</a>${subMenuHTML}</li>`;
 	})
@@ -17,4 +19,4 @@ const nav = (navData) => {
 	</nav>`
 }
 
-module.exports = nav;
+export default nav;

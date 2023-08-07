@@ -3,8 +3,10 @@ const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+// loop through pages to generate static files on build
+
 module.exports = {
-  entry: './src/ui/index.js',
+  entry:  './src/ui/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
@@ -40,6 +42,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/ui/index.html',
+      filename : 'index.html'
     }),
     new webpack.ProvidePlugin({
       $: 'jquery',

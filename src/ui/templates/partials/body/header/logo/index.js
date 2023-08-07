@@ -1,6 +1,8 @@
-// const logoWithImg = `<img src="./img/rs-logo.png" alt="RScard"/>`;
-const logo = (logoData) =>{
-	return `<a class="logo" href="/">${logoData.data}</a>`;
+
+import headLogo from '../../../../../../assets/img/rs-logo.png';
+
+const logo = (displayAsImg = false) =>{
+	return displayAsImg ? `<a class="head-logo" href="/"><img src=${headLogo} alt="RScard"/></a>` :  `<a class="logo" href="/"><span>RS</span>card</a>`;
 }
 
-module.exports = logo;
+export default logo;

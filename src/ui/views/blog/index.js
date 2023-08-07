@@ -1,4 +1,4 @@
-import posts from '../../../api/db/posts';
+import posts from '../../../api/db/user/posts';
 
 import PostBox from './post-box';
 

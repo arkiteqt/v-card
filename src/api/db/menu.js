@@ -15,7 +15,7 @@ const menu = [{
 	'link' : '#references'
 },{
 	'name' : 'Blog',
-	'link' : 'category.html',
+	'link' : '#category',
 	'menu' : [{
 		'name' : 'Image Post',
 		'link' : 'single.html'

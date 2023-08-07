@@ -1,4 +1,4 @@
-import Projects from '../../../api/db/projects';
+import Projects from '../../../api/db/user/projects';
 import GridItem from './grid-item';
 
 const Grid = () => { 
