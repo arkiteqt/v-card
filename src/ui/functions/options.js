@@ -97,3 +97,5 @@ var rsOptions = {
 		]
     }	
 };
+
+export default rsOptions;

@@ -1,4 +1,19 @@
 /**
+*   Icons
+**/
+@import './fonts/map-icons/css/map-icons.css';
+@import './fonts/icomoon/style.css';
+/**
+* Third-Party Plugins
+**/
+@import '../functions/plugins/jquery.bxslider/jquery.bxslider.css';
+@import '../functions/plugins/jquery.customscroll/jquery.mCustomScrollbar.css';
+@import '../functions//plugins/jquery.mediaelement/mediaelementplayer.css';
+@import '../functions/plugins/jquery.fancybox/jquery.fancybox.css';
+@import '../functions/plugins/jquery.owlcarousel/owl.carousel.css';
+@import '../functions/plugins/jquery.owlcarousel/owl.theme.css';
+
+/**
  * Table of Contents:
  *
  * 1.0 - Reset
@@ -56,7 +71,6 @@
  * 15.0 - Theme dark
  * 16.0 - Old Browsers
  */
-
 @import 'partials/reset';
 @import 'partials/general';
 @import 'partials/form';

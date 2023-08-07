@@ -1,7 +1,5 @@
-import $ from 'jquery';
-import "./styles/fonts/icomoon/style.scss";
 import "./styles/main.scss";
-// import "./functions/plugins/jquery.fancybox/jquery.fancybox.css";
+
 // Page Components & Modules
 import Sidebar from './templates/partials/body/sidebar';
 import Wrapper from './templates/partials/body/wrapper';
@@ -10,8 +8,8 @@ import Profile from './views/profile';
 import Blog from './views/blog'
 import Grid from './views/grid';
 
-import isotope from './functions/plugins/isotope.pkgd.min.js'
-import fancybox from "./functions/plugins/jquery.fancybox/jquery.fancybox";
+import useFancybox from "./functions/useFancybox";
+
 
 function hideSitePreloader() {
     $('#preloader').remove();
@@ -58,6 +56,10 @@ function router(evt) {
     // $('.container').append(Section('blog','From the blog',false,BlogSection));
     // const PortfolioSection = Grid();
     // $('.container').append(Section('portfolio','Portfolio',false, PortfolioSection));
+    const ProfileSection = Profile();
+    $('.container').append(Section('about', '',true,ProfileSection));
+
+    useFancybox();
 
 
             // Portfolio fancybox
@@ -115,6 +117,7 @@ function router(evt) {
     
 
     hideSitePreloader();
+
   })();
   
 
