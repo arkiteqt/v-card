@@ -2,13 +2,16 @@ import Header from '../header';
 import Footer from '../footer';
 
 const Wrapper = () => {
-	return `${Header()}
-	<div class="content">
-		<div class="container">
-			
+	return `
+	<div class="wrapper">
+		${Header()}
+		<div class="content">
+			<div class="container">
+				
+			</div>
 		</div>
-	</div>
-	${Footer()}`
+		${Footer()}
+	</div>`
 }
 
 export default Wrapper;

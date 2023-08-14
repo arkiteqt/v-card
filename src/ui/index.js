@@ -18,15 +18,19 @@ function hideSitePreloader() {
 function router(evt) {
     let url = window.location.hash.slice(1) || '/';
     switch(url){
-        case '/':
-            const ProfileSection = Profile();
-            $('.container').html(Section('about', '',true,ProfileSection));
-            break;
-        case 'category' : 
+        case 'category' :
+            if(!$('body').hasClass('.home')){
+                $('body').removeClass('home');
+            } 
             const BlogSection = Blog();
             $('.container').html(Section('blog','From the blog',false,BlogSection));
             break;
-        default: 
+        default:
+            if(!$('body').hasClass('.home')){
+                $('body').addClass('home')
+            }
+            const ProfileSection = Profile();
+            $('.container').html(Section('about', '',true,ProfileSection)); 
             break;
 
     }
@@ -49,10 +53,6 @@ function router(evt) {
     $('.sidebar').append(SidebarEl);
     const WrapperEl = Wrapper();
     $('.wrapper').append(WrapperEl);
-
-    const ProfileSection = Profile();
-    $('.container').append(Section('about', '',true,ProfileSection));
-
 
     hideSitePreloader();
 
