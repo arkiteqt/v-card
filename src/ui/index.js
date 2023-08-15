@@ -8,8 +8,6 @@ import Profile from './views/profile';
 import Blog from './views/blog'
 import Grid from './views/grid';
 
-import useFancybox from "./functions/useFancybox";
-
 
 function hideSitePreloader() {
     $('#preloader').remove();
