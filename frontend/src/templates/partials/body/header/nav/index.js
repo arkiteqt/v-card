@@ -1,4 +1,5 @@
-import navData from '../../../../../../api/db/menu';
+// import navData from '../../../../../../api/db/menu';
+const navData = [];
 
 const nav = () => {
 	const menu = navData.map((item, index) => {

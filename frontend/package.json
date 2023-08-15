@@ -1,5 +1,5 @@
 {
-  "name": "v-card",
+  "name": "v-card-frontend",
   "version": "0.2.6",
   "description": "A virtual resume & business card template",
   "engines": {

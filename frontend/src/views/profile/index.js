@@ -38,7 +38,7 @@ const data = {
 import ProfileInfo from "./info";
 import ProfileList from "./list";
 import ProfileSocial from "./social";
-import ProfilePhoto from "../../../assets/img/uploads/rs-photo-v1.jpg";
+import ProfilePhoto from "../../assets/img/uploads/rs-photo-v1.jpg";
 
 const Profile = () => {
     return `<div class="profile">

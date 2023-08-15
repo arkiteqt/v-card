@@ -6,7 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 // loop through pages to generate static files on build
 
 module.exports = {
-  entry:  './src/ui/index.js',
+  entry:  './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
@@ -41,7 +41,7 @@ module.exports = {
       filename: 'main.css',
     }),
     new HtmlWebpackPlugin({
-      template: './src/ui/index.html',
+      template: './src/templates/pages/index.html',
       filename : 'index.html'
     }),
     new webpack.ProvidePlugin({

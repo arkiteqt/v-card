@@ -1,4 +1,5 @@
-import posts from '../../../api/db/user/posts';
+// import posts from '../../../api/db/user/posts';
+const posts = [];
 
 import PostBox from './post-box';
 

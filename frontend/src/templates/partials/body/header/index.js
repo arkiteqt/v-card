@@ -1,6 +1,6 @@
 // const nav = require('./nav');
 
-import backgroundimg from "../../../../../assets/img/uploads/rs-cover.jpg";
+import backgroundimg from "../../../../assets/img/uploads/rs-cover.jpg";
 import logo from "./logo";
 import nav from "./nav";
 const Header = (backgroundImg = true ) => { 
