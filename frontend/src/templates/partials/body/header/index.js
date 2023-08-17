@@ -1,5 +1,4 @@
-// const nav = require('./nav');
-
+// header img size : 1526 x 647
 import backgroundimg from "../../../../assets/img/uploads/rs-cover.jpg";
 import logo from "./logo";
 import nav from "./nav";
