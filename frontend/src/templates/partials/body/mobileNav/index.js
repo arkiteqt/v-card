@@ -22,7 +22,7 @@ const navData = [{
 	}]
 }];
 
-const nav = () => {
+const mobileNav = () => {
 	const menu = navData.map((item, index) => {
 		let subMenuHTML = '';
 		if(item.menu){
@@ -34,11 +34,15 @@ const nav = () => {
 		return `<li><a href="${item.link}">${item.name}</a>${subMenuHTML}</li>`;
 	})
 	
-	return `<nav id="nav" class="nav">
-		<ul class="clearfix">
-			${menu.join('')}
-		</ul>
-	</nav>`
+	return `
+		<button class="btn-mobile mobile-nav-close"><i class="rsicon rsicon-close"></i></button>
+		<div class="mobile-nav-inner">
+			<nav id="mobile-nav" class="nav">
+				<ul class="clearfix">
+					${menu.join('')}
+				</ul>
+			</nav>
+		</div>`
 }
 
-export default nav;
+export default mobileNav;

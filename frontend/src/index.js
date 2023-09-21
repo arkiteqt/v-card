@@ -1,5 +1,7 @@
 import "./styles/main.scss";
 
+// helpers
+import { toggleSidebar, toggleMenu, stickyNav} from "./functions/scripts";
 // Page Components & Modules
 import Sidebar from './templates/partials/body/sidebar';
 import Wrapper from './templates/partials/body/wrapper';
@@ -7,6 +9,7 @@ import Section from './templates/partials/section';
 import Profile from './views/profile';
 import Blog from './views/blog'
 import Grid from './views/grid';
+import mobileNav from "./templates/partials/body/mobileNav";
 
 
 function hideSitePreloader() {
@@ -47,10 +50,23 @@ function router(evt) {
     // document.body.appendChild(heading);
     // Your jQuery code goes here
     // Example:
+    toggleSidebar();
+    toggleMenu();
+
+    const mobileNavEl = mobileNav();
+    $('.mobile-nav').append(mobileNavEl);
+
     const SidebarEl = Sidebar();
     $('.sidebar').append(SidebarEl);
+    
     const WrapperEl = Wrapper();
     $('.wrapper').append(WrapperEl);
+
+    stickyNav();
+		
+    $(window).scroll(function () {
+        stickyNav();
+    });
 
     hideSitePreloader();
 

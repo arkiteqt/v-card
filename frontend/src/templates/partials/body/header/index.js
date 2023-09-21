@@ -2,6 +2,7 @@
 import backgroundimg from "../../../../assets/img/uploads/rs-cover.jpg";
 import logo from "./logo";
 import nav from "./nav";
+
 const Header = (backgroundImg = true ) => { 
     const backgroundImgHTML =  backgroundImg ? `<div class="head-bg" style="background-image: url('${backgroundimg}')"></div>` : ''; 
     return `<header class="header">
