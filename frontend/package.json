@@ -8,11 +8,20 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --mode development --open --port 3000",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "devDependencies": {
     "@babel/core": "^7.22.5",
     "@babel/preset-env": "^7.21.5",
+    "@storybook/addon-essentials": "^7.6.0",
+    "@storybook/addon-interactions": "^7.6.0",
+    "@storybook/addon-links": "^7.6.0",
+    "@storybook/blocks": "^7.6.0",
+    "@storybook/html": "^7.6.0",
+    "@storybook/html-webpack5": "^7.6.0",
+    "@storybook/test": "^7.6.0",
     "babel-loader": "^9.1.2",
     "css-loader": "^6.7.3",
     "ejs": "2.5.6",
@@ -21,8 +30,11 @@
     "html-webpack-plugin": "^5.5.1",
     "jquery": "^3.7.0",
     "mini-css-extract-plugin": "^2.7.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "sass": "^1.59.3",
     "sass-loader": "^13.2.2",
+    "storybook": "^7.6.0",
     "style-loader": "^3.3.3",
     "webpack": "^5.82.1",
     "webpack-cli": "^5.1.1",
