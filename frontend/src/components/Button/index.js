@@ -1,5 +1,4 @@
-import './index.css';
-const ButtonR = () => {
+export const ButtonR = () => {
 	return <button class="btn btn-border ripple"><i class="rsicon rsicon-add"></i></button>
 }
 
