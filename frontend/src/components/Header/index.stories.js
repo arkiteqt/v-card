@@ -17,12 +17,10 @@ export default {
   },
 };
 
-export const LoggedIn = {
-  args: {
-    user: {
-      name: 'Jane Doe',
-    },
-  },
-};
+export const HeaderHasImg = {};
 
-export const LoggedOut = {};
+export const HeaderWithoutBackgroundImage = {
+    args : {
+        backgroundImg : false
+    }
+};
