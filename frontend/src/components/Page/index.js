@@ -2,11 +2,9 @@ import { createHeader } from '../Header';
 
 
 export const createPage = () => {
-  const wrapper = document.createElement('div');
-  wrapper.classList.add('wrapper');
-
-  const header = createHeader({backgroundImg : true});
-
-
-  return wrapper;
+  const page = document.createElement('div');
+  const body = document.getElementsByTagName('body');
+  body[0].classList.add('header-has-img');
+  page.appendChild(createHeader({ backgroundImg : true }));
+  return page;
 };
