@@ -4,7 +4,7 @@ import Nav from "../Nav";
 
 const Header = (backgroundImg = true ) => {
     const backgroundImgHTML =  backgroundImg ? `<div class="head-bg" style="background-image: url('${backgroundimg}')"></div>` : ''; 
-        return `<header class="header">
+        return `<header class="${backgroundImg ? 'header-has-img' : ''} header">
                     ${backgroundImgHTML}
 
         <div class="head-bar animated">
@@ -31,9 +31,9 @@ const Header = (backgroundImg = true ) => {
 export const createHeader = ({backgroundImg}) => {
   const wrapper = document.createElement('div');
   wrapper.classList.add('wrapper');
+  console.log(backgroundImg)
   const header = Header(backgroundImg);
   wrapper.insertAdjacentHTML('beforeend', header);
-
 
   return wrapper;
 };
