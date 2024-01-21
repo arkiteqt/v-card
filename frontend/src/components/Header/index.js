@@ -1,9 +1,10 @@
-import backgroundimg from "../../assets/img/uploads/rs-cover.jpg";
+import defaultBackgroundImg from "../../assets/img/uploads/rs-cover.jpg";
 import Logo from "../Logo";
 import Nav from "../Nav";
 
-const Header = (backgroundImg = true ) => {
-    const backgroundImgHTML =  backgroundImg ? `<div class="head-bg" style="background-image: url('${backgroundimg}')"></div>` : ''; 
+const Header = (backgroundImg = null ) => {
+    const img = backgroundImg ? backgroundImg[0] : defaultBackgroundImg;
+    const backgroundImgHTML =  `<div class="head-bg" style="background-image: url('${img}')"></div>`; 
         return `<header class="${backgroundImg ? 'header-has-img' : ''} header">
                     ${backgroundImgHTML}
 

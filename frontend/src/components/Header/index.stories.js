@@ -14,6 +14,7 @@ export default {
     onLogin: { action: 'onLogin' },
     onLogout: { action: 'onLogout' },
     onCreateAccount: { action: 'onCreateAccount' },
+    backgroundImg : { control : 'file'}
   },
 };
 
