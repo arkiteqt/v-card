@@ -1,23 +1,29 @@
-export const ButtonR = () => {
-	return <button class="btn btn-border ripple"><i class="rsicon rsicon-add"></i></button>
-}
-
 
 export const createButton = ({
   primary = false,
   size = 'medium',
   backgroundColor,
   label,
-  onClick,
+  border = true,
+  icon
 }) => {
   const btn = document.createElement('button');
   btn.type = 'button';
-  btn.innerText = label;
-  btn.addEventListener('click', onClick);
+  if(!icon)
+    btn.innerText = label;
 
-  btn.className = ['btn','btn-border'].join(' ');
+  const elementClasses = ['btn'];
+  if(border){
+    elementClasses.push('btn-border')
+  }
+
+  elementClasses.push('ripple')
+
+  btn.className = elementClasses.join(' ');
 
   btn.style.backgroundColor = backgroundColor;
+  if(icon)
+    btn.insertAdjacentHTML('beforeend', `<i class="rsicon rsicon-${icon}"></i>`);
 
   return btn;
 };

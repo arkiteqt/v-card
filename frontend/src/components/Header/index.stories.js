@@ -11,17 +11,21 @@ export default {
   },
   // More on argTypes: https://storybook.js.org/docs/api/argtypes
   argTypes: {
-    onLogin: { action: 'onLogin' },
-    onLogout: { action: 'onLogout' },
-    onCreateAccount: { action: 'onCreateAccount' },
-    backgroundImg : { control : 'file'}
+    hasBackgroundImg : {control :'boolean'},
+    backgroundImg : { control : 'file'},
+    displayLogoAsImg : { control : 'boolean'},
+    hasSidebar : {control : 'boolean'}
   },
 };
 
-export const HeaderHasImg = {};
+export const HeaderHasImg = {
+  args : {
+    hasBackgroundImg : true
+  }
+};
 
 export const HeaderWithoutBackgroundImage = {
     args : {
-        backgroundImg : false
+      hasBackgroundImg : false
     }
 };

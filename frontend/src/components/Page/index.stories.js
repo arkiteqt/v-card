@@ -9,5 +9,5 @@ export default {
   },
 };
 
-export const LoggedOut = {};
+export const defaultPage = {};
 
